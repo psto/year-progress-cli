@@ -1,0 +1,22 @@
+{
+  "name": "year-progress-cli",
+  "version": "1.0.0",
+  "description": "A command line tool for displaying year progress.",
+  "main": "app.js",
+  "keywords": [
+    "year progress",
+    "cli",
+    "cli app"
+  ],
+  "author": {
+    "name": "Piotr Stojanow",
+    "email": "piotrstojanow@gmail.com",
+    "url": "stojanow.com"
+  },
+  "license": "MIT",
+  "bin": "app.js",
+  "dependencies": {
+    "cli-progress": "^2.1.1",
+    "g": "^2.0.1"
+  }
+}
