@@ -11,9 +11,10 @@ npm install year-progress-cli -g
 ```js
 year-progress
 ```
+**Tip**: run it as a custom command when you open your terminal.
 
 ## Author
 [stojanow.com](http://stojanow.com) | twitter: [@piotrstojanow](https://twitter.com/piotrstojanow) | github: [@psto](https://github.com/psto)
 
 ## License
-Released under the [MIT](./LICENSE).
+Released under the [MIT](./LICENSE) license.
