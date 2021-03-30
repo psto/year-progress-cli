@@ -1,6 +1,6 @@
 {
   "name": "year-progress-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A command line tool for displaying year progress.",
   "main": "app.js",
   "keywords": [
@@ -19,9 +19,11 @@
     "type": "git",
     "url": "https://github.com/psto/year-progress-cli.git"
   },
-  "bin" : { "year-progress" : "./app.js" },
+  "bin": {
+    "year-progress": "./app.js"
+  },
   "dependencies": {
-    "cli-progress": "^2.1.1",
+    "cli-progress": "^3.9.0",
     "g": "^2.0.1"
   }
 }
