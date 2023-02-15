@@ -2,7 +2,8 @@
   "name": "year-progress-cli",
   "version": "1.0.1",
   "description": "A command line tool for displaying year progress.",
-  "main": "app.js",
+  "main": "dist/index.cjs",
+  "types": "./dist/index.d.ts",
   "type": "module",
   "keywords": [
     "year progress",
@@ -20,17 +21,31 @@
     "type": "git",
     "url": "https://github.com/psto/year-progress-cli.git"
   },
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
   "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "unbuild",
     "dev": "ts-node --esm ./src/index.ts"
   },
   "bin": {
-    "year-progress": "./app.js"
+    "year-progress": "bin/year-progress.mjs"
   },
+  "files": [
+    "dist",
+    "bin"
+  ],
   "dependencies": {
-    "cli-progress": "^3.9.0",
+    "cli-progress": "^3.9.0"
+  },
   "devDependencies": {
     "@types/cli-progress": "^3.11.0",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.5",
+    "unbuild": "^1.1.1"
   }
 }
