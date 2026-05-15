@@ -41,11 +41,7 @@
     "dist",
     "bin"
   ],
-  "dependencies": {
-    "cli-progress": "^3.12.0"
-  },
   "devDependencies": {
-    "@types/cli-progress": "^3.11.6",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3",
     "unbuild": "^3.6.1",
