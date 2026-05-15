@@ -30,7 +30,9 @@
   "scripts": {
     "prepublishOnly": "npm run build",
     "build": "unbuild",
-    "dev": "ts-node --esm ./src/index.ts"
+    "dev": "npm run build && node bin/year-progress.mjs",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "bin": {
     "year-progress": "bin/year-progress.mjs"
@@ -46,6 +48,7 @@
     "@types/cli-progress": "^3.11.6",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3",
-    "unbuild": "^3.6.1"
+    "unbuild": "^3.6.1",
+    "vitest": "^4.1.6"
   }
 }

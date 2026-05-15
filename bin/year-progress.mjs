@@ -1,3 +1,4 @@
 #!/usr/bin/env node
-'use strict'
-import '../dist/index.mjs'
+import { main } from '../dist/index.mjs';
+
+main();
